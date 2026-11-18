@@ -41,7 +41,7 @@
 
         body {
             font-family: 'Noto Sans', sans-serif;
-            background: var(--surface);
+            background: var(--bg);
             color: var(--text);
             line-height: 1.8;
             margin: 0;
@@ -89,8 +89,8 @@
         }
 
         .header {
-            margin-bottom: 36px;
-            padding-bottom: 28px;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
             border-bottom: 1px solid var(--border);
             text-align: left;
             width: 100%;
@@ -123,13 +123,13 @@
         }
 
         .section {
-            background: transparent;
-            padding: 32px 0;
-            border-radius: 0;
-            border: none;
-            border-bottom: 1px solid var(--border);
-            box-shadow: none;
-            margin-bottom: 0;
+            background: var(--surface);
+            padding: 30px 36px;
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 20px;
+            width: 100%;
         }
 
         h2 {
@@ -191,12 +191,14 @@
         .note p { color: var(--text); margin: 0; }
 
         .contact-box {
-            background: var(--primary-soft);
-            padding: 36px 32px;
-            border-radius: 16px;
+            background: var(--surface);
+            padding: 36px 36px;
+            border-radius: 18px;
             border: 1px solid var(--border);
-            margin-top: 48px;
+            box-shadow: var(--shadow-soft);
+            margin-top: 32px;
             text-align: center;
+            width: 100%;
         }
 
         .contact-box h2 {
@@ -248,9 +250,17 @@
 
         @media (max-width: 768px) {
             .navbar { padding: 16px 20px; }
-            .container { padding: 24px 20px 60px; }
+            .container { padding: 24px 16px 60px; }
             h1 { font-size: 2.1rem; }
-            .section { padding: 24px 0; }
+            .section {
+                padding: 22px 20px;
+                border-radius: 14px;
+                margin-bottom: 16px;
+            }
+            .contact-box {
+                padding: 28px 20px;
+                border-radius: 14px;
+            }
             .contact-box .email { padding: 8px 12px; font-size: 0.95rem; }
         }
     </style>
